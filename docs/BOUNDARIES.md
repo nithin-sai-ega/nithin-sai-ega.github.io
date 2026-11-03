@@ -2,7 +2,7 @@
 
 `al-folio` is a starter kit. Runtime/component ownership lives in gems.
 
-This file is the authoritative **area-to-gem** table. For how the pieces connect at runtime — the wrapper/tag/gem delegation map, silent feature gating, the v1 config contract — see [`ARCHITECTURE.md`](ARCHITECTURE.md). For the short agent entry point, see [`AGENTS.md`](../AGENTS.md).
+This file is the authoritative **area-to-gem** table. For how the pieces connect at runtime — the wrapper/tag/gem delegation map, silent feature gating, the v1 config contract — see [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
 ## Runtime ownership
 

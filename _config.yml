@@ -210,10 +210,8 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
-  - CLAUDE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml

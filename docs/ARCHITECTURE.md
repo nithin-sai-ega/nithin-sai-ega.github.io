@@ -1,6 +1,6 @@
 # Architecture (v1.x)
 
-This is the **authoritative** description of how the `al-folio` v1 starter and its plugin gems fit together. It is written for humans and coding agents alike. [`AGENTS.md`](../AGENTS.md) is the short entry point and links here; [`BOUNDARIES.md`](BOUNDARIES.md) is the authoritative area-to-gem ownership table. Everything in this file should exist in exactly one place — if you find it restated elsewhere, link here instead of copying.
+This is the **authoritative** description of how the `al-folio` v1 starter and its plugin gems fit together. [`BOUNDARIES.md`](BOUNDARIES.md) is the authoritative area-to-gem ownership table. Everything in this file should exist in exactly one place — if you find it restated elsewhere, link here instead of copying.
 
 <!--ts-->
 
@@ -30,7 +30,7 @@ This is the **authoritative** description of how the `al-folio` v1 starter and i
 
 **All runtime — layouts, includes, Sass, Liquid tags, filters, and feature JS — lives in versioned gems** published independently on RubyGems and developed under the [`al-org-dev`](https://github.com/al-org-dev) organization.
 
-The single most common mistake is editing runtime here. If a change is a layout, include, tag, filter, or feature behavior, it belongs in the owning gem. See the routing table in [`AGENTS.md`](../AGENTS.md#route-your-change) and the full ownership table in [`BOUNDARIES.md`](BOUNDARIES.md).
+The single most common mistake is editing runtime here. If a change is a layout, include, tag, filter, or feature behavior, it belongs in the owning gem. See the full ownership table in [`BOUNDARIES.md`](BOUNDARIES.md).
 
 ## Failure modes that produce no error message
 

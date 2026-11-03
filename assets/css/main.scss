@@ -1,0 +1,61 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Site customization: center the arrow in the back-to-top button.
+// vanilla-back-to-top sizes the icon margin for its default 56px button, but the
+// theme shrinks the button to 40px, which leaves the arrow sitting too low.
+#back-to-top svg {
+  margin-top: 8px;
+}
+
+// Site customization: the CV page marks its entries up as Bootstrap `list-group`s,
+// but Bootstrap's styles are turned off in this setup, so every entry gets a stray
+// bullet (the dot beside the Education date). Hide it and align entries with the headings.
+.cv ul.list-group {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Site customization: navy accent color (matches the resume headings and favicon)
+// in place of the template's default purple. Dark mode gets a lighter blue so it
+// stays readable on a dark background.
+:root {
+  --global-theme-color: #1f4e79;
+  --global-hover-color: #1f4e79;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #6fa8dc;
+  --global-hover-color: #6fa8dc;
+}

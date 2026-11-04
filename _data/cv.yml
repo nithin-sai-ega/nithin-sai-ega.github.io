@@ -34,12 +34,13 @@ cv:
           - "Developed a physics-based acoustic simulator and **124 automated tests** to validate the signal-processing and gesture-detection logic."
           - "Shipped a Streamlit dashboard with live Doppler spectrograms, guided data collection, background training, and hardware diagnostics that auto-calibrate each device."
 
-      - name: Course Snipe Web App
-        summary: "Spring Boot, React, Vite, Material UI"
+      - name: ScarletWatch
+        url: https://github.com/nithin-sai-ega/scarletwatch
+        summary: "Python, FastAPI, SQLite, HTMX, Docker"
         highlights:
-          - "Built a full-stack web application that monitors and displays open course sections in real time for Rutgers students."
-          - "Designed RESTful backend endpoints to fetch, filter, and process course data efficiently."
-          - "Built an interactive, responsive frontend with React and Material UI to streamline student class registration."
+          - "Built a self-hosted watcher that checks Rutgers' public Schedule of Classes data about once a minute and sends a free push notification, Discord message, or email the moment a closed section opens."
+          - "Designed it to be polite to the server (one request per semester per cycle, a 30-second minimum interval, exponential backoff) and to ignore bad data so a glitch never triggers a false alert."
+          - "Built a FastAPI and HTMX dashboard, a command-line tool, and Docker and systemd packaging, with 182 tests and CI on Python 3.11 to 3.13."
 
     Skills:
       - name: Languages

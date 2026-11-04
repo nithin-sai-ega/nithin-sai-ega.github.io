@@ -2,7 +2,7 @@
 layout: page
 title: Bias Detector
 description: Chrome extension that checks articles and text for political bias and fake-news likelihood
-importance: 2
+importance: 4
 summary: A Chrome extension with a Spring Boot backend that sends a webpage, URL, or pasted text to Google's Gemini model and shows its political-bias direction and fake-news estimate.
 tech:
   - Java

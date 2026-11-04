@@ -6,9 +6,8 @@ subtitle: Computer Science & Data Science at <a href='https://www.rutgers.edu/'>
 
 profile:
   align: right
-  # To add a photo later: save it as assets/img/prof_pic.jpg and uncomment the next line.
-  # image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Rutgers University, New Brunswick</p>
     <p>B.S. Computer Science & Data Science</p>
@@ -26,7 +25,7 @@ latest_posts:
 
 I'm a Computer Science and Data Science undergraduate at **Rutgers University**, with a minor in Mathematics, graduating in May 2027. I like building machine learning and software systems.
 
-My projects include [EchoTouch](/projects/echotouch/), a camera-free gesture-control system that uses a laptop's speaker and microphone as a sonar sensor, and a full-stack web app built with Spring Boot and React. You can find the details on the [projects page](/projects/) and in my [CV](/cv/).
+My projects include [EchoTouch](/projects/echotouch/), a camera-free gesture-control system that uses a laptop's speaker and microphone as a sonar sensor, and [ScarletWatch](/projects/scarletwatch/), a self-hosted tool that alerts students when a closed Rutgers course section opens. You can find the details on the [projects page](/projects/) and in my [CV](/cv/).
 
 ### Skills
 
